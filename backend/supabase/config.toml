@@ -1,0 +1,7 @@
+project_id = "your-project-ref"
+
+[functions.fleet-status]
+# Keep JWT verification ON (default). This function is called from the
+# Next.js /api/fleet route using a key that stays server-side — never call
+# it directly from the browser with a key baked into client code.
+verify_jwt = true
